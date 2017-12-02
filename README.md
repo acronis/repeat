@@ -4,6 +4,7 @@
 [![GoDoc](https://godoc.org/github.com/acronis/repeat?status.svg)](https://godoc.org/github.com/acronis/repeat)
 [![Build Status](https://travis-ci.org/acronis/repeat.svg?branch=master)](https://travis-ci.org/acronis/repeat)
 [![Go Report Status](https://goreportcard.com/badge/github.com/acronis/repeat)](https://goreportcard.com/report/github.com/acronis/repeat)
+[![GoCover](https://gocover.io/_badge/github.com/acronis/repeat)](https://gocover.io/github.com/acronis/repeat)
 
 Go implementation of different backoff strategies useful for retrying operations and heartbeating.
 

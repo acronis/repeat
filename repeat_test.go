@@ -256,7 +256,7 @@ func TestCpp_C_PanicOP_D(t *testing.T) {
 	}
 
 	require.Panics(t, func() {
-		Cpp(cd, cd).Compose(errOp)(nil)
+		_ = Cpp(cd, cd).Compose(errOp)(nil)
 	})
 	require.Equal(t, 2, c)
 }
@@ -275,7 +275,7 @@ func TestCpp_C_Op_ErrorD(t *testing.T) {
 	}
 
 	require.Panics(t, func() {
-		Cpp(cc, dd).Compose(Nope)(nil)
+		_ = Cpp(cc, dd).Compose(Nope)(nil)
 	})
 	require.Equal(t, 2, c)
 }
@@ -344,7 +344,7 @@ func TestWith_C_PanicOP_D(t *testing.T) {
 	}
 
 	require.Panics(t, func() {
-		With(cd, cd).Compose(errOp)(nil)
+		_ = With(cd, cd).Compose(errOp)(nil)
 	})
 	require.Equal(t, 2, c)
 }

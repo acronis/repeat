@@ -166,10 +166,6 @@ type ExponentialBackoffBuilder struct {
 	//
 	// Default value is 0.
 	Jitter float64
-
-	nextDelay float64
-	maxDelay  float64
-	rnd       *rand.Rand
 }
 
 // WithMaxDelay allows to set MaxDelay.

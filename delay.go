@@ -49,7 +49,7 @@ func WithDelay(options ...func(hb *DelayOptions)) Operation {
 
 		delayT := time.NewTimer(do.Backoff())
 		defer delayT.Stop()
-		deadlineT := time.NewTimer(deadline.Sub(time.Now()))
+		deadlineT := time.NewTimer(time.Until(deadline))
 		defer deadlineT.Stop()
 
 		select {

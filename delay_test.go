@@ -51,7 +51,7 @@ func GetDelay(t *testing.T, o Operation, result error) time.Duration {
 	} else {
 		assert.Error(t, o(result), result.Error())
 	}
-	return time.Now().Sub(start)
+	return time.Since(start)
 }
 
 func InRange(t *testing.T, delay time.Duration, min time.Duration, max time.Duration) {

@@ -1,10 +1,8 @@
 # Repeat
 
 ![Alt text](https://user-images.githubusercontent.com/1574981/33310621-48c78416-d433-11e7-9a80-36d2381901d0.png "repeat")
-[![GoDoc](https://godoc.org/github.com/acronis/repeat?status.svg)](https://godoc.org/github.com/acronis/repeat)
-[![Build Status](https://travis-ci.org/acronis/repeat.svg?branch=master)](https://travis-ci.org/acronis/repeat)
-[![Go Report Status](https://goreportcard.com/badge/github.com/acronis/repeat)](https://goreportcard.com/report/github.com/acronis/repeat)
-[![GoCover](https://gocover.io/_badge/github.com/acronis/repeat)](https://gocover.io/github.com/acronis/repeat)
+[![Go Reference](https://pkg.go.dev/badge/github.com/acronis/repeat.svg)](https://pkg.go.dev/github.com/acronis/repeat)
+[![Build Status](https://github.com/acronis/repeat/actions/workflows/go.yml/badge.svg)](https://github.com/acronis/repeat/actions/workflows/go.yml)
 
 Go implementation of different backoff strategies useful for retrying operations and heartbeating.
 

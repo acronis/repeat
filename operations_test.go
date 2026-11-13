@@ -67,10 +67,10 @@ func TestFn(t *testing.T) {
 
 func TestLimitMaxTries(t *testing.T) {
 	fn := LimitMaxTries(5)
-	fn(nil)
-	fn(nil)
-	fn(nil)
-	fn(nil)
+	_ = fn(nil)
+	_ = fn(nil)
+	_ = fn(nil)
+	_ = fn(nil)
 	assert.True(t, fn(nil) == nil)
 	assert.False(t, fn(nil) == nil)
 }
@@ -188,7 +188,7 @@ func TestFnPanic(t *testing.T) {
 	require.EqualError(t, se, "repeat.stop: stop")
 
 	// Panic
-	require.Panics(t, func() { fn(errors.New("common")) })
+	require.Panics(t, func() { _ = fn(errors.New("common")) })
 }
 
 func TestFnOnlyOnce(t *testing.T) {
@@ -199,9 +199,9 @@ func TestFnOnlyOnce(t *testing.T) {
 	}
 
 	fn := FnOnlyOnce(op)
-	fn(nil)
-	fn(nil)
-	fn(nil)
+	_ = fn(nil)
+	_ = fn(nil)
+	_ = fn(nil)
 
 	require.Equal(t, 1, c)
 }
